@@ -9,7 +9,7 @@ void more() {
     int N,i=0;
     cin>>N;
     int *A = new int[N];
-    while(std::cin>>A[i++]);
+    while(cin>>A[i++] && (i < N));
     while(std::cout<<A[--N]<<' ' && N);
     delete[] A;
 }
